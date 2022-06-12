@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2021 Nain57
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <string name="app_name" translatable="false">Smart AutoClicker</string>
+
+    <string name="activity_scenario_title">Scenarios</string>
+    <string name="menu_search_item_title">Search</string>
+    <string name="no_scenarios">No scenario.\nClick on the \'+\' button to create one.</string>
+    <plurals name="scenario_sub_text">
+        <item quantity="one">%d event</item>
+        <item quantity="other">%d events</item>
+    </plurals>
+
+    <string name="dialog_permissions_title">Permissions required</string>
+    <string name="dialog_permissions_header">The following permissions are required to use Smart AutoClicker:</string>
+    <string name="dialog_permission_overlay">Overlay</string>
+    <string name="dialog_permission_overlay_desc">The overlay permission allows this application to display a menu
+                                                  over other apps.</string>
+    <string name="dialog_permission_accessibility">Accessibility service</string>
+    <string name="dialog_permission_accessibility_desc">The accessibility service allows this application to click on
+                                                        other apps for you.</string>
+
+    <string name="notification_channel_name" translatable="false">Smart AutoClicker</string>
+    <string name="notification_title">Scenario: %1$s</string>
+    <string name="notification_message">Press to change the scenario</string>
+
+    <string name="dialog_add_scenario_title">New scenario</string>
+    <string name="dialog_add_scenario_name_hint">Name</string>
+    <string name="dialog_delete_scenario_title">Delete scenario</string>
+    <string name="dialog_delete_scenario_message">This will delete %1$s. Are you sure ?</string>
+    <string name="dialog_rename_scenario_title">Rename scenario</string>
+
+    <string name="dialog_event_list_title">Event list</string>
+    <string name="dialog_event_list_add">New</string>
+    <string name="dialog_event_list_reorder">Reorder</string>
+    <string name="dialog_event_list_no_events">No events.\nClick on \'New\' to create one. </string>
+
+    <string name="dialog_event_add_title">Add new event</string>
+    <string name="dialog_event_add_create">Create</string>
+    <string name="dialog_event_add_copy">Copy from an existing event</string>
+
+    <string name="dialog_event_copy_header_event">Events from this scenario</string>
+    <string name="dialog_event_copy_header_all">Events from all scenarios</string>
+    <string name="dialog_event_copy_search">Search by event name</string>
+    <string name="dialog_event_copy_empty">No events found.</string>
+
+    <string name="dialog_event_config_title">Event configuration</string>
+    <string name="dialog_event_config_name_title">Name</string>
+    <string name="dialog_event_config_condition_title">Conditions</string>
+    <string name="dialog_event_config_actions_title">Actions</string>
+
+    <string name="dialog_event_config_stop_after_executions">Executions before scenario end</string>
+    <string name="dialog_event_config_executions_hint">Don\'t stop the scenario</string>
+
+    <string name="dialog_event_config_min_delay">Minimum delay between action</string>
+    <string name="dialog_event_config_min_delay_hint">Delay in ms</string>
+
+
+    <string name="dialog_condition_operator_title">Conditions type</string>
+    <string name="condition_operator_and">All conditions</string>
+    <string name="condition_operator_or">Only one condition</string>
+    <string name="condition_operator_and_desc">All conditions are fulfilled</string>
+    <string name="condition_operator_or_desc">At least one is fulfilled</string>
+
+    <string name="dialog_action_type_title">Action type</string>
+    <string name="dialog_action_type_click">Click</string>
+    <string name="dialog_action_type_swipe">Swipe</string>
+    <string name="dialog_action_type_pause">Wait</string>
+    <string name="dialog_action_type_input">Input</string>
+    <string name="dialog_action_type_button_press">Button</string>
+    <string name="dialog_action_config_click_press_duration_title">Press duration</string>
+    <string name="dialog_action_config_click_position_title">Click position</string>
+    <string name="dialog_action_config_click_position_none">No click position defined</string>
+    <string name="dialog_action_config_click_position">Click on %1$d, %2$d</string>
+    <string name="dialog_action_config_swipe_duration_title">Swipe duration</string>
+    <string name="dialog_action_config_swipe_position_title">Swipe position</string>
+    <string name="dialog_action_config_swipe_position_none">No swipe position defined</string>
+    <string name="dialog_action_config_swipe_position">Swipe from %1$d, %2$d to %3$d, %4$d</string>
+    <string name="dialog_action_config_pause_duration_title">Pause duration</string>
+    <string name="dialog_action_config_input_text_title">Input text</string>
+
+    <string name="dialog_action_new_title">New Action</string>
+    <string name="dialog_action_new_create">Create</string>
+    <string name="dialog_action_new_copy">Copy from another action</string>
+    <string name="dialog_action_copy_empty">No actions found.</string>
+    <string name="dialog_action_copy_click_details">During %1$s at [%2$d, %3$d]</string>
+    <string name="dialog_action_copy_swipe_details">During %1$s from [%2$d, %3$d] to [%4$d, %5$d]</string>
+    <string name="dialog_action_copy_pause_details">During %1$s</string>
+    <string name="dialog_action_copy_header_event">Actions from this event</string>
+    <string name="dialog_action_copy_header_all">Actions from all events</string>
+    <string name="dialog_action_copy_search">Search by action name</string>
+
+    <string name="dialog_condition_title">Condition</string>
+    <string name="dialog_condition_details_title">Details</string>
+    <string name="dialog_condition_delete">Delete</string>
+    <string name="dialog_condition_at">at position [%1$d,%2$d] [%3$d,%4$d]</string>
+    <string name="dialog_condition_threshold_title">Tolerated difference</string>
+    <string name="dialog_condition_threshold_value">Tolerance: %1$d %%</string>
+    <string name="dialog_condition_error">The condition image can\'t be found.</string>
+    <string name="dialog_condition_new_title">New Condition</string>
+    <string name="dialog_condition_new_create">Create</string>
+    <string name="dialog_condition_new_copy">Copy from another condition</string>
+    <string name="dialog_condition_copy_empty">Can\'t copy, you don\'t have any conditions.</string>
+    <string name="dialog_condition_copy_threshold">%1$d%%</string>
+
+    <string name="toast_configure_single_click">Touch the position to click on.</string>
+    <string name="toast_configure_swipe_from">Touch the position to start the swipe from.</string>
+    <string name="toast_configure_swipe_to">Touch the position to end the swipe to.</string>
+
+    <string name="accessibility_service_description">This application needs this service to inject the clicks you have
+        created into the other applications once the conditions have been detected.\n\nNo data will be collected from
+        this application. Feel free to visit our github, the code is open source !</string>
+
+    <string name="content_desc_add_scenario">Create a new scenario</string>
+    <string name="content_desc_image_condition">The image to be detected</string>
+    <string name="content_desc_event_action_btn">Edit this event</string>
+    <string name="content_desc_delete_scenario">Delete scenario</string>
+    <string name="content_desc_play_pause_scenario">Play or pause the scenario</string>
+    <string name="content_desc_stop_clicker">Stop Smart AutoClicker</string>
+    <string name="content_desc_open_event_list">Open the event list</string>
+    <string name="content_desc_move_menu">Move the floating menu</string>
+    <string name="content_desc_confirm">Confirm</string>
+    <string name="content_desc_go_back">Back to dialog</string>
+    <string name="content_desc_overlay_state">Overlay permission state</string>
+    <string name="content_desc_accessibility_state">Accessibility service permission state</string>
+    <string name="content_desc_action">The action to be executed</string>
+    <string name="content_desc_action_icon">The icon showing the type of action</string>
+    <string name="content_desc_dialog_title_icon">The dialog title icon.</string>
+
+    <string name="dialog_unit_ms" translatable="false">ms</string>
+
+    <string name="dialog_copy_title">Copy from</string>
+    <string name="menu_setting_title">Setting</string>
+    <string name="menu_backup_title">Backup</string>
+    <string name="menu_restore_title">Restore</string>
+    <string name="menu_import_title">Import</string>
+
+
+</resources>

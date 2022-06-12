@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/debug/res/drawable/ic_smart_auto_clicker_foreground.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/anim_pause_play.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/anim_play_pause.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_add.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_all_conditions.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_cancel.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_chevron.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_click.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_click_list.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_confirm.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_copy.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_drag.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_hint_move.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_hint_resize_down.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_hint_resize_left.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_hint_resize_right.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_hint_resize_up.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_move.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_notification.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_one_condition.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_pause.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_play_arrow.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_rename.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_screenshot.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_smart_auto_clicker_foreground.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_stop.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_swipe.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_wait.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/drawable/ic_wait_aligned.xml" value="0.1035" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/activity_scenario.xml" value="0.2246376811594203" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/dialog_action_config.xml" value="0.2" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/dialog_action_copy.xml" value="0.2246376811594203" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/dialog_condition_config.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/dialog_condition_copy.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/dialog_edit.xml" value="0.11302083333333333" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/dialog_event_config.xml" value="0.264" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/dialog_event_copy.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/dialog_event_list.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/dialog_multi_choice.xml" value="0.12182971014492754" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/dialog_permissions.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/fragment_scenarios.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/include_button_config.xml" value="0.314070351758794" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/include_click_config.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/include_input_config.xml" value="0.4" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/include_pause_config.xml" value="0.15625" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/include_swipe_config.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/item_action.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/item_action_card.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/item_add_card.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/item_event.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/merge_loadable_list.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/overlay_menu.xml" value="0.264" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/overlay_validation_menu.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/layout/view_action_icon.xml" value="0.1" />
+        <entry key="..\:/code_others/Smart-AutoClicker/smartautoclicker/src/main/res/menu/menu_scenario_activity.xml" value="0.275" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

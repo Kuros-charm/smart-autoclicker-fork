@@ -1,0 +1,109 @@
+/*
+ * Copyright (C) 2021 Nain57
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; If not, see <http://www.gnu.org/licenses/>.
+ */
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+// Read signing.properties file to find signing configuration
+def signingProperties = new Properties()
+def signingStoreFile = file('./smartautoclicker.jks')
+def signingPropertiesFile = rootProject.file("signing.properties")
+if (signingPropertiesFile.exists()) {
+    signingProperties.load(new FileInputStream(signingPropertiesFile))
+}
+
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        applicationId "com.buzbuz.smartautoclicker"
+        minSdkVersion 24
+        targetSdkVersion 31
+        versionCode 12
+        versionName "1.2.4"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        kotlin {
+            kotlinOptions {
+                freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
+            }
+        }
+    }
+
+    if (signingStoreFile.exists()) {
+        signingConfigs {
+            release {
+                storeFile file('./smartautoclicker.jks')
+                storePassword signingProperties['signingStorePassword'] ?: rootProject.signingStorePassword
+                keyAlias signingProperties['signingKeyAlias'] ?: rootProject.signingKeyAlias
+                keyPassword signingProperties['signingKeyPassword'] ?: rootProject.signingKeyPassword
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            if (signingStoreFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            applicationIdSuffix '.debug'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    packagingOptions {
+        exclude 'META-INF/atomicfu.kotlin_module'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinx_version"
+
+    implementation 'de.raphaelebner:roomdatabasebackup:1.0.0-beta10'
+
+
+    implementation "androidx.core:core-ktx:${rootProject.ext.androidxCoreVersion}"
+    implementation "androidx.appcompat:appcompat:${rootProject.ext.androidxAppCompatVersion}"
+    implementation "androidx.recyclerview:recyclerview:${rootProject.ext.androidxRecyclerViewVersion}"
+    implementation "androidx.fragment:fragment-ktx:${rootProject.androidxFragmentVersion}"
+
+    implementation "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.androidxLifecycleExtensionVersion}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${rootProject.ext.androidxLifecycleVersion}"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:${rootProject.ext.androidxLifecycleVersion}"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:${rootProject.ext.androidxLifecycleVersion}"
+    implementation "androidx.lifecycle:lifecycle-common-java8:${rootProject.ext.androidxLifecycleVersion}"
+    implementation "androidx.room:room-ktx:${rootProject.ext.androidxRoomVersion}"
+
+    implementation "com.google.android.material:material:${rootProject.ext.googleMaterialVersion}"
+
+    implementation project(path: ':base-ui')
+    implementation project(path: ':database')
+    implementation project(path: ':detection')
+    implementation project(path: ':extensions')
+}

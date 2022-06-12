@@ -1,0 +1,65 @@
+/*
+ * Copyright (C) 2020 Nain57
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; If not, see <http://www.gnu.org/licenses/>.
+ */
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.6.10'
+    ext.kotlinx_version = '1.6.0-native-mt'
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+ext {
+    androidxAppCompatVersion = '1.4.1'
+    androidxAnnotationVersion = '1.3.0'
+    androidxCoreVersion = '1.7.0'
+    androidxLifecycleVersion = '2.4.0'
+    androidxLifecycleExtensionVersion = '2.2.0'
+    androidxRecyclerViewVersion = '1.2.1'
+    androidxFragmentVersion = '1.4.1'
+    androidxRoomVersion = '2.4.1'
+    googleMaterialVersion = '1.5.0'
+
+    jUnitVersion = '4.13.2'
+    androidxArchCoreTestingVersion = '2.1.0'
+    androidxTestCoreVersion = '1.4.0'
+    androidxTestExtVersion = '1.1.3'
+    mockitoCoreVersion = '3.12.4'
+    mockitoKotlinVersion = '3.2.0'
+    robolectricVersion = '4.4'
+}
+
+task clean (type: Delete) {
+    delete rootProject.buildDir
+}
